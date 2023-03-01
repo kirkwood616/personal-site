@@ -1,0 +1,44 @@
+.header_container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 4rem;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+.header_bar {
+  background: linear-gradient(90deg, transparent, lightgrey, transparent);
+  height: 1px;
+  width: 100%;
+}
+
+.header_text {
+  align-items: center;
+  background: linear-gradient(90deg, transparent, transparent, black, black, black, black, transparent, transparent);
+  display: flex;
+  height: 70%;
+  justify-content: center;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 0 15px black;
+  width: 100%;
+}
+
+.header_text > h1 {
+  letter-spacing: 0.25rem;
+  text-shadow: 0 0 15px black;
+}
+
+@media only screen and (min-width: 576px) {
+  .header_container {
+    width: 85%;
+  }
+
+  .header_text {
+    background: linear-gradient(90deg, transparent, transparent, black, black, black, transparent, transparent);
+  }
+}
